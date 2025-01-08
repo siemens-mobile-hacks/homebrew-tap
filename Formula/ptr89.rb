@@ -1,9 +1,9 @@
-class Elf2vkp < Formula
+class Ptr89 < Formula
   desc "Tool for converting .elf to .vkp patches"
   homepage "https://github.com/siemens-mobile-hacks/ptr89"
   url "https://github.com/siemens-mobile-hacks/ptr89.git",
       tag:      "v1.0.4",
-      revision: "fed910a8e6c1737eade3877f67e2629b96e16175"
+      revision: "a5d9157e30d5bba8e2a336724754cbb5a9795885"
   license "MIT"
   head "https://github.com/siemens-mobile-hacks/ptr89.git", branch: "main"
 
