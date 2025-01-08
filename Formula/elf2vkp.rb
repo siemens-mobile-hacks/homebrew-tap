@@ -2,8 +2,8 @@ class Elf2vkp < Formula
   desc "Tool for converting .elf to .vkp patches"
   homepage "https://github.com/siemens-mobile-hacks/elf2vkp"
   url "https://github.com/siemens-mobile-hacks/elf2vkp.git",
-      tag:      "v1.1.4",
-      revision: "d6b2be96c5295a1f5a08724fbf8d6712ce0c1092"
+      tag:      "v1.1.5",
+      revision: "bb7798d40b5ec2f8814bfb5a4be9f0a2478b83ed"
   license "MIT"
   head "https://github.com/siemens-mobile-hacks/elf2vkp.git", branch: "main"
 
