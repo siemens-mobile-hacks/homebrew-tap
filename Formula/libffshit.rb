@@ -12,7 +12,7 @@ class Libffshit < Formula
   end
 
   depends_on "cmake" => :build
-  depends_on "fmt" => :build
+  depends_on "fmt"
 
   def install
     system "cmake", "-DCMAKE_BUILD_TYPE=Release", "-S", ".", "-B", "build", *std_cmake_args

@@ -12,9 +12,9 @@ class Ffnightman < Formula
   end
 
   depends_on "cmake" => :build
-  depends_on "fmt" => :build
-  depends_on "libffshit" => :build
-  depends_on "spdlog" => :build
+  depends_on "fmt"
+  depends_on "libffshit"
+  depends_on "spdlog"
 
   def install
     system "cmake", "-DCMAKE_BUILD_TYPE=Release", "-S", ".", "-B", "build", *std_cmake_args
