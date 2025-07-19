@@ -2,11 +2,10 @@ class Ffnightman < Formula
   desc "Siemens Mobile phones filesystem extractor"
   homepage "https://github.com/siemens-mobile-hacks/ffnightman"
   license "MIT"
+  url "https://github.com/siemens-mobile-hacks/ffnightman.git", branch: "main"
 
   version "latest"
   sha256 :no_check
-
-  url "https://github.com/siemens-mobile-hacks/ffnightman.git", branch: "main"
 
   livecheck do
     url :url
