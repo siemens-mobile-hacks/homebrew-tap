@@ -5,7 +5,6 @@ class Libffshit < Formula
   url "https://github.com/siemens-mobile-hacks/libffshit.git", branch: "main"
 
   version "latest"
-  sha256 :no_check
 
   livecheck do
     url :url

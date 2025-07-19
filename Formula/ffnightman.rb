@@ -5,7 +5,6 @@ class Ffnightman < Formula
   url "https://github.com/siemens-mobile-hacks/ffnightman.git", branch: "main"
 
   version "latest"
-  sha256 :no_check
 
   livecheck do
     url :url
