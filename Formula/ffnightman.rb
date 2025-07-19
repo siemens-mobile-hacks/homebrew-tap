@@ -3,8 +3,8 @@ class Ffnightman < Formula
   homepage "https://github.com/siemens-mobile-hacks/ffnightman"
   url "https://github.com/siemens-mobile-hacks/ffnightman.git", branch: "main"
   version "latest"
-  head "https://github.com/siemens-mobile-hacks/ffnightman.git", branch: "main"
   license "MIT"
+  head "https://github.com/siemens-mobile-hacks/ffnightman.git", branch: "main"
 
   livecheck do
     url :head
