@@ -2,8 +2,8 @@ class Libffshit < Formula
   desc "Siemens Mobile phones filesystem library"
   homepage "https://github.com/siemens-mobile-hacks/libffshit"
   url "https://github.com/siemens-mobile-hacks/libffshit.git", branch: "main"
-  head "https://github.com/siemens-mobile-hacks/libffshit.git", branch: "main"
   version "latest"
+  head "https://github.com/siemens-mobile-hacks/libffshit.git", branch: "main"
   license "MIT"
 
   livecheck do
