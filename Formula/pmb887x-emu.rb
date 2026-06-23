@@ -2,8 +2,8 @@ class Pmb887xEmu < Formula
 	desc "Infineon PMB887x-based phones emulator"
 	homepage "https://github.com/siemens-mobile-hacks/pmb887x-emu"
 	url "https://github.com/siemens-mobile-hacks/pmb887x-emu.git",
-      tag:      "v0.1.0",
-	  revision: "7d45dd48e5bdc6c8c7377f58b91d3fddf18ecdbc"
+      tag:      "v0.1.1",
+	  revision: "7a8d182e6d0d14a2937ac083d722a6df436ced04"
 	license "MIT"
 	head "https://github.com/siemens-mobile-hacks/pmb887x-emu.git", branch: "main"
 
