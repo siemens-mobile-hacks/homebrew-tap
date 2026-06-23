@@ -1,44 +1,44 @@
 class Pmb887xEmu < Formula
-	desc "Infineon PMB887x-based phones emulator"
-	homepage "https://github.com/siemens-mobile-hacks/pmb887x-emu"
-	url "https://github.com/siemens-mobile-hacks/pmb887x-emu.git",
-      tag:      "v0.1.2",
-	  revision: "b20bd4ed76923820f9dac4bb33c9831fe0e8d7bc"
-	license "MIT"
-	head "https://github.com/siemens-mobile-hacks/pmb887x-emu.git", branch: "main"
+  desc "Infineon PMB887x-based phones emulator"
+  homepage "https://github.com/siemens-mobile-hacks/pmb887x-emu"
+  url "https://github.com/siemens-mobile-hacks/pmb887x-emu.git",
+      tag:      "v0.1.3",
+      revision: "3a1c5f438acb52d8c3e98d214051682ebe8165ab"
+  license "MIT"
+  head "https://github.com/siemens-mobile-hacks/pmb887x-emu.git", branch: "main"
 
-	livecheck do
-		url :stable
-		strategy :github_latest
-	end
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
 
-	depends_on "coreutils" => :build
-	depends_on "cmake" => :build
-	depends_on "libtool" => :build
-	depends_on "meson" => :build
-	depends_on "ninja" => :build
-	depends_on "pkgconf" => :build
-	depends_on "python@3.14" => :build
-	depends_on "capstone"
-	depends_on "glib"
-	depends_on "jpeg-turbo"
-	depends_on "libpng"
-	depends_on "lzo"
-	depends_on "pixman"
-	depends_on "zstd"
+  depends_on "cmake" => :build
+  depends_on "coreutils" => :build
+  depends_on "libtool" => :build
+  depends_on "meson" => :build
+  depends_on "ninja" => :build
+  depends_on "pkgconf" => :build
+  depends_on "python@3.14" => :build
+  depends_on "capstone"
+  depends_on "glib"
+  depends_on "jpeg-turbo"
+  depends_on "libpng"
+  depends_on "lzo"
+  depends_on "pixman"
+  depends_on "zstd"
 
-	uses_from_macos "bison" => :build
-	uses_from_macos "flex" => :build
-	uses_from_macos "bzip2"
-	uses_from_macos "zlib"
+  uses_from_macos "bison" => :build
+  uses_from_macos "flex" => :build
+  uses_from_macos "bzip2"
+  uses_from_macos "zlib"
 
-	def install
-		system "cmake", "-S", ".", "-B", "build", *std_cmake_args
-		system "cmake", "--build", "build"
-		system "cmake", "--install", "build"
-	end
+  def install
+    system "cmake", "-S", ".", "-B", "build", *std_cmake_args
+    system "cmake", "--build", "build"
+    system "cmake", "--install", "build"
+  end
 
-	test do
-		assert_match "Usage: pmb887x-emu", shell_output("#{bin}/pmb887x-emu -h 2>&1", 1)
-	end
+  test do
+    assert_match "Usage: pmb887x-emu", shell_output("#{bin}/pmb887x-emu -h 2>&1", 1)
+  end
 end
