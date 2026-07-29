@@ -3,12 +3,13 @@ class Vasm < Formula
   homepage "https://github.com/siemens-mobile-hacks/vasm"
   url "https://github.com/siemens-mobile-hacks/vasm.git",
       tag:      "v2.0f",
-      revision: "7afae7e828e808ea45a12e6adf13839387d2be99"
+      revision: "2516daa63ddd61744dfaae72b829002fb22c2cfe"
   head "https://github.com/siemens-mobile-hacks/vasm.git", branch: "main"
 
   def install
+    cpu_files = %w[cpu.c cpu.h]
     cpus = Dir.children("cpus").select do |cpu|
-      %w[cpu.c cpu.h].all? { |file| File.file?("cpus/#{cpu}/#{file}") }
+      cpu_files.all? { |file| File.file?("cpus/#{cpu}/#{file}") }
     end.sort
     syntaxes = %w[std madmac mot oldstyle]
 
